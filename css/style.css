@@ -9,36 +9,58 @@
 .logo-text {
   font-size: 1.5em;
 }
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-/* label color */
-.input-field label {
-  color: #e65100;
-}
-/* label focus color */
-.input-field input[type]:focus + label {
-  color: #aaa;
-}
-/* label underline focus color */
-.input-field input[type="text"]:focus {
+.input-field input[type]:not([readonly]),
+.input-field input[type]:focus:not([readonly]),
+.input-field textarea:not([readonly]),
+.input-field textarea:focus:not([readonly]) {
   border-bottom: 1px solid #e65100;
   box-shadow: 0 1px 0 0 #e65100;
 }
-/* valid color */
-.input-field input[type="text"].valid {
+
+.input-field input[type]:focus:not([readonly]) + label,
+.input-field textarea:focus:not([readonly]) + label {
+  color: #e65100;
+}
+
+.input-field input[type].invalid,
+.input-field input[type].invalid:focus,
+.input-field textarea.invalid,
+.input-field textarea.invalid:focus {
   border-bottom: 1px solid #000;
   box-shadow: 0 1px 0 0 #000;
 }
-/* invalid color */
-.input-field input[type="text"].invalid {
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000;
+
+.input-field input[type].invalid:focus + label,
+.input-field input[type].invalid ~ .helper-text::after,
+.input-field input[type].invalid:focus ~ .helper-text::after,
+.input-field textarea.invalid:focus + label,
+.input-field textarea.invalid ~ .helper-text::after,
+.input-field textarea.invalid:focus ~ .helper-text::after {
+  color: #000;
+}
+
+.input-field input[type].valid,
+.input-field input[type].valid:focus,
+.input-field textarea.valid,
+.input-field textarea.valid:focus {
+  border-bottom: 1px solid #e65100;
+  box-shadow: 0 1px 0 0 #e65100;
+}
+
+.input-field input[type].valid:focus + label,
+.input-field input[type].valid ~ .helper-text::after,
+.input-field input[type].valid:focus ~ .helper-text::after,
+.input-field textarea.valid:focus + label,
+.input-field textarea.valid ~ .helper-text::after,
+.input-field textarea.valid:focus ~ .helper-text::after {
+  color: #26a69a;
+}
+
+[type="radio"]:checked + span:after {
+  background-color: #e65100;
+}
+[type="radio"]:checked + span:after {
+  border: 2px solid #e65100;
 }
 
 .card {

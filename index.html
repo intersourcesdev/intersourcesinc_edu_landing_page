@@ -17,82 +17,84 @@
   </nav>
   <div class="row orange darken-4">
     <div class="container">
-      <div class="col m7 s12">
-        <div class="section" id="index-banner">
-          <div class="container">
-            <h2 class="header center white-text">Let Us Impact Your Life</h2>
-            <h3 class="header center light white-text">Using Top-Notch training in <b>Python</b>, <b>MySQL</b> and
-              <b>Full
-                Stack Development. </b></h3>
-            <br>
-            <br>
-          </div>
-        </div>
-
-      </div>
-      <div class="col m5 s12">
-        <div class="section no-pad-bot" id="index-banner">
-          <div class="row white card">
-            <form class="col s12">
+      <div class="section">
+        <div class="col m7 s12">
+          <div class="section" id="index-banner">
+            <div class="container">
+              <h2 class="header center white-text">Let Us Impact Your Life</h2>
+              <h3 class="header center light white-text">Using Top-Notch training in <b>Python</b>, <b>MySQL</b> and
+                <b>Full
+                  Stack Development. </b></h3>
               <br>
-              <div class="col s12">
-                <h3 class="orange-text text-darken-4 center">Get In Touch</h3>
-              </div>
-              <div class="input-field col s6">
-                <input id="name" type="text" class="black-text">
-                <label for="name">Name</label>
-              </div>
+              <br>
+            </div>
+          </div>
 
-              <div class="input-field col s6">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
-
-              <div class="input-field col s6">
-                <input id="phone" type="tel" class="validate" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                <label for="phone">Phone</label>
-              </div>
-
-              <div class="input-field col s6">
-                <input id="zip" type="number" class="validate">
-                <label for="zip">Zip</label>
-              </div>
-
-              <div class="input-field col s6">
-                <h6 class="orange-text text-darken-4">Are You Currently Employed ?</h6>
-                <div class="radio-btn col s6">
-                  <p>
-                    <label>
-                      <input name="is_emp" type="radio" />
-                      <span>Yes</span>
-                    </label>
-                  </p>
-                </div>
-
-                <div class="radio-btn col s6">
-                  <p>
-                    <label>
-                      <input name="is_emp" type="radio" />
-                      <span>No</span>
-                    </label>
-                  </p>
-                </div>
-
-              </div>
-
-              <div class="input-field col s6">
-                <h6 class="orange-text text-darken-4">Years of experience with Coding</h6>
-                <input id="exp_num" type="number" class="validate">
-              </div>
-
-              <div class="row center">
+        </div>
+        <div class="col m5 s12">
+          <div class="section no-pad-bot" id="index-banner">
+            <div class="row white card">
+              <form class="col s12">
+                <br>
                 <div class="col s12">
-                  <a href="http://materializecss.com/getting-started.html" id="download-button"
-                    class="btn-large waves-effect waves-light orange darken-4">Contact Me</a>
+                  <h3 class="orange-text text-darken-4 center">Get In Touch</h3>
                 </div>
-              </div>
-              <br><br>
-            </form>
+                <div class="input-field col s6">
+                  <input id="name" type="text" class="black-text validate" required>
+                  <label for="name">Name</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate" required>
+                  <label for="email">Email</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="phone" type="tel" class="validate" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  <label for="phone">Phone (123-456-8910)</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="zip" type="number" class="validate">
+                  <label for="zip">Zip</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <h6 class="orange-text text-darken-4">Are You Currently Employed ?</h6>
+                  <div class="radio-btn col s6">
+                    <p>
+                      <label>
+                        <input name="is_emp" type="radio" class="red" />
+                        <span>Yes</span>
+                      </label>
+                    </p>
+                  </div>
+
+                  <div class="radio-btn col s6">
+                    <p>
+                      <label>
+                        <input name="is_emp" type="radio" />
+                        <span>No</span>
+                      </label>
+                    </p>
+                  </div>
+
+                </div>
+
+                <div class="input-field col s6">
+                  <h6 class="orange-text text-darken-4">Years of experience with Coding</h6>
+                  <input id="exp_num" type="number" class="validate">
+                </div>
+
+                <div class="row center">
+                  <div class="col s12">
+                    <a href="http://materializecss.com/getting-started.html" id="download-button"
+                      class="btn-large waves-effect waves-light orange darken-4">Contact Me</a>
+                  </div>
+                </div>
+                <br><br>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -101,36 +103,35 @@
 
   <div class="container">
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block center">
-            <img src="./assets//pencil1.png" width="140" height="200" alt="Precise Courses" />
+            <img src="./assets//pencil1.png" width="150" height="250" alt="Precise Courses" />
             <h5 class="center">PRECISE COURSES</h5>
 
-            <p class="light">We have carefully engineered our courses to give you the exact skills you need to secure a
-              job at any high tech company.</p>
+            <p>We have carefully engineered our courses to give you the exact skills you need to secure a
+              job at high tech companies.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block center">
-            <img src="./assets//pencil2.png" width="140" height="200" alt="Excellent Staff" />
+            <img src="./assets//pencil2.png" width="150" height="250" alt="Excellent Staff" />
             <h5 class="center">EXCELLENT STAFF</h5>
 
-            <p class="light">Handpicked Teachers, Councellors and Mentors to keep you on track, and to give you helpful
+            <p>Handpicked Teachers, Councellors and Mentors to keep you on track, and to give you helpful
               feedback so you can ace coding and technical interviews.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block center">
-            <img src="./assets//pencil3.png" width="140" height="200" alt="Real World Projects" />
+            <img src="./assets//pencil3.png" width="150" height="250" alt="Real World Projects" />
             <h5 class="center">REAL WORLD PROJECTS</h5>
 
-            <p class="light">Develop Real Case projects that help you connect various technologies together to engineer
-              a full fledge, real life application.</p>
+            <p>Develop Real Case projects that help you connect various technologies together to engineer
+              a full-fledge, real world application.</p>
           </div>
         </div>
       </div>
@@ -139,7 +140,7 @@
     <br><br>
   </div>
 
-  <div class="blue darken-2">
+  <div class="blue darken-2" style="height: 120px">
     <div class="container">
       <div class="row">
         <div class="col s12">
