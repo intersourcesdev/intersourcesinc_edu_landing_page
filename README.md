@@ -1,1 +1,1 @@
-# intersourcesinc_edu_landing_page
+# Landing Page for InterSources Inc Learning Platform
