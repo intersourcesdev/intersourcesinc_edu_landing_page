@@ -1,7 +1,9 @@
-(function($){
-  $(function(){
+document.addEventListener("DOMContentLoaded", function() {
+  var options = {
+    duration: 500,
+    indicators: true
+  };
 
-    $('.sidenav').sidenav();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  var elems = document.querySelectorAll(".carousel");
+  var instances = M.Carousel.init(elems, options);
+});
