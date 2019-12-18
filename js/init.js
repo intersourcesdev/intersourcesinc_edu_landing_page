@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   var options = {
-    duration: 500,
-    indicators: true
+    duration: 500
   };
 
   var elems = document.querySelectorAll(".carousel");
