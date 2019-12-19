@@ -10,9 +10,6 @@ html {
   font-family: "Oswald", sans-serif;
 }
 
-.logo-text {
-  font-size: 1.5em;
-}
 .input-field input[type]:not([readonly]),
 .input-field input[type]:focus:not([readonly]),
 .input-field textarea:not([readonly]),
