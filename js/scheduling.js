@@ -22,7 +22,7 @@ function handleScheduleSubmit() {
   var timeLap = document.getElementById("timeLap");
 
   var dateMob = document.getElementById("dateMob");
-  var timeMob = document.getElementById("Mob");
+  var timeMob = document.getElementById("timeMob");
 
   if (dateLap.value === "") {
     var data = {
@@ -47,8 +47,8 @@ function handleScheduleSubmit() {
   } else {
     var data = {
       fields: {
-        Schedule_date: dateMob.value,
-        Schedule_time: timeMob.value
+        Schedule_date: dateLap.value,
+        Schedule_time: timeLap.value
       }
     };
 
