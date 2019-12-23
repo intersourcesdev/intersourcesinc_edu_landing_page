@@ -47,8 +47,8 @@ function handleScheduleSubmit() {
   } else {
     var data = {
       fields: {
-        Schedule_date: dateLap.value,
-        Schedule_time: timeLap.value
+        Schedule_date: dateMob.value,
+        Schedule_time: timeMob.value
       }
     };
 
