@@ -66,15 +66,46 @@ html {
 
 .card {
   border-radius: 8%;
+  padding: 8px;
   box-shadow: 0 6px 10px 0 rgba(143, 117, 117, 0.2);
 }
 
 .card-content {
   bottom: 28px;
-  padding: 12px;
 }
 
 .btm {
   padding-top: 0.6%;
   padding-bottom: 1%;
+}
+
+.datepicker-date-display {
+  background-color: #db4437;
+}
+
+.is-today {
+  color: #db4437 !important;
+}
+.datepicker-table td.is-selected {
+  background: #db4437 !important;
+}
+.datepicker-cancel,
+.datepicker-done {
+  color: #db4437;
+}
+
+.timepicker-digital-display {
+  background-color: #db4437;
+}
+
+.timepicker-close {
+  color: #db4437;
+}
+
+.timepicker-canvas line {
+  stroke: #db4437;
+}
+.timepicker-canvas-bg,
+.timepicker-canvas-bearing {
+  fill: #db4437;
 }

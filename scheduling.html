@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>IntersourcesInc Education</title>
+
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="./assets/original_icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+</head>
+
+<body>
+    <div class="nav-wrapper container">
+        <div class="hide-on-med-and-up center">
+            <img src="./assets/codes_data_logo.gif" width="180px" height="50px" style="padding-top: 3px" />
+        </div>
+
+        <div class="hide-on-small-only">
+            <img src="./assets/codes_data_logo.gif" width="190px" height="42px" style="padding-top: 6px" />
+            <img src="./assets/google_cloud_logo.png" width="228px" height="72px" class="right"
+                style="position: relative; bottom: 10px" />
+        </div>
+    </div>
+
+
+    <div class="row orange darken-4">
+        <div class="container">
+            <div class="section">
+                <div class="col s12 center">
+                    <h3 class="white-text">Easy Right?</h3>
+                </div>
+            </div>
+
+            <div class="col s12">
+                <div class=" container">
+                    <div class="section">
+                        <div class="hide-on-med-and-up">
+                            <div class="row white card" style="margin:0 auto">
+                                <form class="col s12">
+                                    <div class="col s12">
+                                        <h4 class="orange-text text-darken-4 center">When could we chat?</h4>
+                                    </div>
+                                    <div class="col s6">
+                                        <input id="dateMob" type="text" class="datepicker orange-text text-darken-4">
+                                        <label for="dateMob" class="orange-text text-darken-4">Date</label>
+                                    </div>
+
+                                    <div class="col s6">
+                                        <input id="timeMob" type="text" class="timepicker orange-text text-darken-4">
+                                        <label for="timeMob" class="orange-text text-darken-4">Time</label>
+                                    </div>
+
+                                    <div class="row center">
+                                        <div class="col s12" style="margin-top: 18px">
+                                            <a class="btn-large waves-effect waves-light orange darken-4"
+                                                onclick="handleScheduleSubmit()">Done!</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="hide-on-small-only">
+                            <div class="row white card" style="width: 50%;margin:0 auto">
+                                <form class="col s12">
+                                    <div class="col s12">
+                                        <h4 class="orange-text text-darken-4 center">When could we chat?</h4>
+                                    </div>
+                                    <div class="col s6">
+                                        <input id="dateLap" type="text" class="datepicker orange-text text-darken-4">
+                                        <label for="dateLap" class="orange-text text-darken-4">Date</label>
+                                    </div>
+
+                                    <div class="col s6">
+                                        <input id="timeLap" type="text" class="timepicker orange-text text-darken-4">
+                                        <label for="timeLap" class="orange-text text-darken-4">Time</label>
+                                    </div>
+
+                                    <div class="row center">
+                                        <div class="col s12" style="margin-top: 18px">
+                                            <a class="btn-large waves-effect waves-light orange darken-4"
+                                                onclick="handleScheduleSubmit()">Done!</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            <div class="col s12">
+                <div class=" container">
+                    <div class="section">
+                        <div class="hide-on-med-and-up">
+                            <div class="row white card" style="margin:0 auto">
+                                <form class="col s12">
+                                    <div class="col s12">
+                                        <h4 class="orange-text text-darken-4 center">Eligible for Scholarship?</h4>
+                                    </div>
+                                    <div class="container">
+                                        <p>asd</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="hide-on-small-only">
+                            <div class="row white card" style="width: 50%;margin:0 auto">
+                                <form class="col s12">
+                                    <div class="col s12">
+                                        <h4 class="orange-text text-darken-4 center">Eligible for Scholarship?</h4>
+                                    </div>
+                                    <div class="container">
+                                        <p>kjaskdj</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <!--  Scripts-->
+    <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/scheduling.js"></script>
+</body>
+
+</html>
