@@ -16,7 +16,10 @@ function handleFormSubmit() {
   var is_emp = false;
   const years_exp = document.getElementById("years_exp");
 
-  if (name.value === "" || email.value === "" || phone.value === "") {
+  if (name.value.trim().indexOf(" ") === -1) {
+    window.alert("Please Enter First & Last Name");
+    name.focus();
+  } else if (name.value === "" || email.value === "" || phone.value === "") {
     window.alert("Form Fields are Missing");
   } else if (name.checkValidity() === false) {
     window.alert("Error in Name");
