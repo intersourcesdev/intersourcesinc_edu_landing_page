@@ -42,7 +42,7 @@ function handleFormSubmit() {
     };
 
     axios
-      .post("https://api.airtable.com/v0/appN4wJImsqMuTVjW/Table%201", data, {
+      .post("https://api.airtable.com/v0/appGsy7136IEvKxCK/Table%201", data, {
         headers: {
           Authorization: "Bearer " + "keyQd5qMpPaNnLoab",
           "Content-Type": "application/json"

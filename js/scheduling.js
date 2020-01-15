@@ -32,8 +32,6 @@ function handleScheduleSubmit() {
       }
     };
 
-    console.log("phone", data);
-
     axios
       .patch(
         `https://api.airtable.com/v0/appGsy7136IEvKxCK/Table%201/${id}`,
