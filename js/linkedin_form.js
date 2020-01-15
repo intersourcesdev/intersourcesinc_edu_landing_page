@@ -7,6 +7,8 @@ function handleFormSubmit() {
   var is_emp = false;
   const years_exp = document.getElementById("years_exp");
 
+  console.log(name.value, phone);
+
   if (name.value.trim().indexOf(" ") === -1) {
     window.alert("Please Enter First & Last Name");
     name.focus();
