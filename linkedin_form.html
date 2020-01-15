@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>IntersourcesInc Education</title>
+
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="./assets/original_icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.min.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
+
+  <body>
+    <div class="white">
+      <div class="nav-wrapper container">
+        <div class="hide-on-med-and-up center">
+          <img
+            src="./assets/codes_data_logo.gif"
+            width="200px"
+            height="42px"
+            style="padding-top: 4px; margin-bottom: 2px"
+          />
+        </div>
+
+        <div class="hide-on-small-only">
+          <img
+            src="./assets/codes_data_logo.gif"
+            width="200px"
+            height="40px"
+            style="padding-top: 6px"
+          />
+          <img
+            src="./assets/google_cloud_logo.png"
+            width="228px"
+            height="72px"
+            class="right"
+            style="position: relative; bottom: 12px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="row orange darken-4">
+      <div class="container">
+        <div class="col m7 s12">
+          <div class="hide-on-small-only">
+            <div class="section">
+              <div class="container">
+                <h2 class="header center white-text">
+                  We Equip You <br />
+                  With the Latest Tech Stacks
+                </h2>
+                <h3 class="header center light white-text">
+                  So You get Hired.
+                </h3>
+              </div>
+              <div class="col s12 center">
+                <h4 class="white-text">An Initiative By</h4>
+                <a href="http://www.intersourcesinc.com">
+                  <img
+                    src="assets/original_logo.png"
+                    width="280px"
+                    height="82px"
+                    alt="Intersources Logo"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="hide-on-med-and-up center">
+            <h4 class="header center white-text">
+              Land Your Dream Tech Job in Silicon Valley
+            </h4>
+            <h4 class="white-text">An Initiative By</h4>
+            <a href="http://www.intersourcesinc.com">
+              <img
+                src="assets/original_logo.png"
+                width="280px"
+                height="78px"
+                alt="Intersources Logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col m5 s12">
+        <div class="container">
+          <div class="section no-pad-bot">
+            <div class="row white card">
+              <form class="col s12">
+                <h3 class="orange-text text-darken-4 center">
+                  Let Us Reach Out
+                </h3>
+                <div class="input-field col s6">
+                  <input
+                    id="name"
+                    type="text"
+                    class="black-text validate"
+                    required
+                  />
+                  <label for="name">Name</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate" required />
+                  <label for="email">Email</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <input
+                    id="phone"
+                    type="tel"
+                    class="validate"
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                    required
+                  />
+                  <label for="phone">Phone (1234567890)</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <input id="zip" type="number" class="validate" />
+                  <label for="zip">Zip</label>
+                </div>
+
+                <div class="input-field col s6">
+                  <h6 class="orange-text text-darken-4">
+                    Are You Currently Employed
+                  </h6>
+                  <div class="radio-btn col s6">
+                    <p>
+                      <label>
+                        <input
+                          id="yes_emp"
+                          name="is_emp"
+                          type="radio"
+                          class="red"
+                        />
+                        <span>Yes</span>
+                      </label>
+                    </p>
+                  </div>
+
+                  <div class="radio-btn col s6">
+                    <p>
+                      <label>
+                        <input is="no_emp" name="is_emp" type="radio" />
+                        <span>No</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="input-field col s6">
+                  <h6 class="orange-text text-darken-4">
+                    Years of experience with Coding
+                  </h6>
+                  <input
+                    id="years_exp"
+                    type="number"
+                    class="validate"
+                    min="0"
+                    value="0"
+                  />
+                </div>
+
+                <div class="row center">
+                  <div class="col s12">
+                    <a
+                      class="btn-large waves-effect waves-light orange darken-4"
+                      onclick="handleFormSubmit()"
+                      >Contact Me</a
+                    >
+                  </div>
+                </div>
+                <br /><br />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <div class="center">
+          <h2 class="red-text">Tech We Cover</h2>
+        </div>
+
+        <div class="col s3">
+          <img src="assets/js.png" width="200" height="140" />
+        </div>
+        <div class="col s3">
+          <img
+            src="assets/react.png"
+            width="210"
+            height="120"
+            style="margin-top: 16px"
+          />
+        </div>
+        <div class="col s3">
+          <img
+            src="assets/python.png"
+            width="200"
+            height="200"
+            style="position: relative; bottom: 12px"
+          />
+        </div>
+        <div class="col s3">
+          <img src="assets/sql.png" width="170" height="120" />
+        </div>
+      </div>
+    </div>
+
+    <!--  Scripts-->
+    <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/linkedin_form.js"></script>
+  </body>
+</html>
