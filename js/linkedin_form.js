@@ -3,9 +3,9 @@ function handleFormSubmit() {
   const email = document.getElementById("email");
   const phone = document.getElementById("phone");
   const zip = document.getElementById("zip");
-  const yes_emp = document.getElementById("yes_emp");
-  var is_emp = false;
-  const years_exp = document.getElementById("years_exp");
+  // const yes_emp = document.getElementById("yes_emp");
+  // var is_emp = false;
+  // const years_exp = document.getElementById("years_exp");
 
   if (name.value.trim().indexOf(" ") === -1) {
     window.alert("Please Enter First & Last Name");
@@ -21,10 +21,11 @@ function handleFormSubmit() {
   } else if (phone.checkValidity() === false) {
     window.alert("Please Check Number Format (1234567890)");
     phone.focus();
-  } else {
-    if (yes_emp.checked === true) {
-      is_emp = true;
-    } else is_emp = false;
+
+    // } else {
+    //   if (yes_emp.checked === true) {
+    //     is_emp = true;
+    //   } else is_emp = false;
 
     const data = {
       records: [
@@ -33,9 +34,9 @@ function handleFormSubmit() {
             Name: name.value,
             Email: email.value,
             Zip: parseInt(zip.value),
-            Phone: phone.value,
-            is_emp: is_emp,
-            years_experience: parseInt(years_exp.value)
+            Phone: phone.value
+            // is_emp: is_emp,
+            // years_experience: parseInt(years_exp.value)
           }
         }
       ]
