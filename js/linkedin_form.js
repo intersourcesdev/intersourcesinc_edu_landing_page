@@ -21,36 +21,36 @@ function handleFormSubmit() {
   } else if (phone.checkValidity() === false) {
     window.alert("Please Check Number Format (1234567890)");
     phone.focus();
-
-    // } else {
-    //   if (yes_emp.checked === true) {
-    //     is_emp = true;
-    //   } else is_emp = false;
-
-    const data = {
-      records: [
-        {
-          fields: {
-            Name: name.value,
-            Email: email.value,
-            Zip: parseInt(zip.value),
-            Phone: phone.value
-            // is_emp: is_emp,
-            // years_experience: parseInt(years_exp.value)
-          }
-        }
-      ]
-    };
-
-    axios
-      .post("https://api.airtable.com/v0/appN4wJImsqMuTVjW/Table%201", data, {
-        headers: {
-          Authorization: "Bearer " + "keyQd5qMpPaNnLoab",
-          "Content-Type": "application/json"
-        }
-      })
-      .then(res => {
-        return window.location.replace("./thankyou.html");
-      });
   }
+
+  // } else {
+  //   if (yes_emp.checked === true) {
+  //     is_emp = true;
+  //   } else is_emp = false;
+
+  const data = {
+    records: [
+      {
+        fields: {
+          Name: name.value,
+          Email: email.value,
+          Zip: parseInt(zip.value),
+          Phone: phone.value
+          // is_emp: is_emp,
+          // years_experience: parseInt(years_exp.value)
+        }
+      }
+    ]
+  };
+
+  axios
+    .post("https://api.airtable.com/v0/appN4wJImsqMuTVjW/Table%201", data, {
+      headers: {
+        Authorization: "Bearer " + "keyQd5qMpPaNnLoab",
+        "Content-Type": "application/json"
+      }
+    })
+    .then(res => {
+      return window.location.replace("./thankyou.html");
+    });
 }
